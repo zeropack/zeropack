@@ -1,0 +1,15 @@
+{
+  "name": "bbr-test-app",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "coffee node_modules/bbr-builder/modules/builder/index.coffee"
+  },
+  "dependencies": {
+    "bbr-builder": "../builder",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
