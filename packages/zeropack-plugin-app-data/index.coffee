@@ -1,5 +1,4 @@
 Webpack = require 'webpack'
-gitRev = require 'git-rev-sync'
 path = require 'path'
 
 module.exports = (context) ->

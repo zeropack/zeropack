@@ -1,36 +1,11 @@
 {
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "bundle-loader": "^0.5.5",
-    "cache-loader": "^1.0.3",
-    "clean-webpack-plugin": "^0.1.17",
-    "coffee-loader": "^0.8.0",
-    "coffeescript": "^2.0.1",
-    "css-loader": "^0.28.7",
-    "dotenv": "^4.0.0",
-    "extract-text-webpack-plugin": "^3.0.1",
-    "file-loader": "^1.1.5",
-    "git-rev-sync": "^1.9.1",
-    "happypack": "^4.0.0",
-    "html-webpack-plugin": "^2.30.1",
-    "lodash.defaultsdeep": "^4.6.0",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.0",
-    "ts-loader": "^2.3.7",
-    "typescript": "^2.5.3",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
-  },
+  "dependencies": {},
   "name": "zeropack",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^2.4.0"
-  }
+  },
+  "author": "Victor Sych <victor.sych@gmail.com>"
 }

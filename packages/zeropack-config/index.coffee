@@ -12,11 +12,16 @@ module.exports = (context) ->
     devServer:
       host: 'localhost'
       port: 8080
+    actions:
+      serve:
+        action: 'zeropack-action-serve'
+      build:
+        action: 'zeropack-action-build'
 
   userBuilderConfig = {}
 
   try
-    userBuilderConfig = require path.resolve(process.cwd(), 'builder.config')
+    userBuilderConfig = require path.join(process.cwd(), 'zeropack.config')
   catch e
     console.log e.message || e.code
 

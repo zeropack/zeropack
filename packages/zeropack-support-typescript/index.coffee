@@ -1,4 +1,4 @@
-{babel} = require '../support-babel/defaultBabelLoader'
+{babel} = require 'zeropack-support-babel/defaultBabelLoader'
 
 ts =
   loader: 'ts-loader'
