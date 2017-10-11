@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "lodash.defaultsdeep": "^4.6.0"
+  },
+  "name": "zeropack-config",
+  "version": "0.0.1",
+  "main": "index.coffee"
+}

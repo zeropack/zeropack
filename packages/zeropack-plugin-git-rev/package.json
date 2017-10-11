@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "git-rev-sync": "^1.9.1"
+  },
+  "name": "zeropack-plugin-git-rev",
+  "version": "0.0.1",
+  "main": "index.coffee"
+}

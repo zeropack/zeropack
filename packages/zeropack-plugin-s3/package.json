@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "webpack-s3-plugin": "^1.0.0-rc.0"
+  },
+  "name": "zeropack-plugin-s3",
+  "version": "0.0.1",
+  "main": "index.coffee"
+}

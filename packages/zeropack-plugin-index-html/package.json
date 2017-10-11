@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1"
+  },
+  "name": "zeropack-plugin-index-html",
+  "version": "0.0.1",
+  "main": "index.coffee"
+}

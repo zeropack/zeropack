@@ -1,0 +1,5 @@
+{
+  "name": "zeropack-plugin-progress-bar",
+  "version": "0.0.1",
+  "main": "index.coffee"
+}

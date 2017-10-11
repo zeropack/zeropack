@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.17"
+  },
+  "name": "zeropack-action-build",
+  "version": "0.0.1",
+  "main": "index.coffee"
+}
