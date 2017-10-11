@@ -3,6 +3,6 @@
     "git-rev-sync": "^1.9.1"
   },
   "name": "zeropack-plugin-git-rev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.coffee"
 }

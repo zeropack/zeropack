@@ -4,6 +4,6 @@
     "happypack": "^4.0.0"
   },
   "name": "zeropack-plugin-happypack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.coffee"
 }

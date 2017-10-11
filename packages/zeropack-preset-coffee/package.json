@@ -1,18 +1,18 @@
 {
   "dependencies": {
-    "zeropack-plugin-app-data": "^0.0.1",
-    "zeropack-plugin-extract-text": "^0.0.1",
-    "zeropack-plugin-git-rev": "^0.0.1",
-    "zeropack-plugin-happypack": "^0.0.1",
-    "zeropack-plugin-index-html": "^0.0.1",
-    "zeropack-plugin-progress-bar": "^0.0.1",
-    "zeropack-support-babel": "^0.0.1",
-    "zeropack-support-coffeescript": "^0.0.1",
-    "zeropack-support-css": "^0.0.1",
-    "zeropack-support-file": "^0.0.1",
-    "zeropack-support-sass": "^0.0.1"
+    "zeropack-plugin-app-data": "^0.0.2",
+    "zeropack-plugin-extract-text": "^0.0.2",
+    "zeropack-plugin-git-rev": "^0.0.2",
+    "zeropack-plugin-happypack": "^0.0.2",
+    "zeropack-plugin-index-html": "^0.0.2",
+    "zeropack-plugin-progress-bar": "^0.0.2",
+    "zeropack-support-babel": "^0.0.2",
+    "zeropack-support-coffeescript": "^0.0.2",
+    "zeropack-support-css": "^0.0.2",
+    "zeropack-support-file": "^0.0.2",
+    "zeropack-support-sass": "^0.0.2"
   },
   "name": "zeropack-preset-coffee",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.coffee"
 }

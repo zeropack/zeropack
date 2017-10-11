@@ -4,6 +4,6 @@
     "style-loader": "^0.19.0"
   },
   "name": "zeropack-support-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.coffee"
 }

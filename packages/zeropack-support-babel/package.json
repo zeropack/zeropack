@@ -7,6 +7,6 @@
     "babel-preset-react": "^6.24.1"
   },
   "name": "zeropack-support-babel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.coffee"
 }
