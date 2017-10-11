@@ -4,8 +4,8 @@
     "coffeescript": "^2.0.1",
     "dotenv": "^4.0.0",
     "webpack": "^3.6.0",
-    "zeropack-action-build": "^0.0.2",
-    "zeropack-action-serve": "^0.0.2",
+    "zeropack-action-build": "^0.0.3",
+    "zeropack-action-serve": "^0.0.3",
     "zeropack-config": "^0.0.2",
     "zeropack-fix-schema": "^0.0.1"
   },
@@ -13,6 +13,6 @@
     "zeropack": "./bin/zeropack.js"
   },
   "name": "zeropack-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.coffee"
 }
