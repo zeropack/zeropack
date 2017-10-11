@@ -17,6 +17,6 @@ module.exports = ({webpackConfig}) ->
       chunks: false
       colors: true
       children: false
-    fs = require('fs');
-    data = stats.toJson()
-    fs.writeFile 'stats.json', JSON.stringify(data,2,2)
+    #fs = require('fs');
+    #data = stats.toJson()
+    #fs.writeFile 'stats.json', JSON.stringify(data,2,2)
