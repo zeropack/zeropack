@@ -4,7 +4,10 @@
     "typescript": "^2.5.3",
     "zeropack-support-babel": "^0.0.2"
   },
+  "peerDependencies": {
+    "fork-ts-checker-webpack-plugin": "^0.2.9",
+  },
   "name": "zeropack-support-typescript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.coffee"
 }
