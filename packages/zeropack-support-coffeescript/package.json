@@ -2,9 +2,9 @@
   "dependencies": {
     "coffee-loader": "^0.8.0",
     "coffeescript": "^2.0.1",
-    "zeropack-support-babel": "^0.0.2"
+    "zeropack-support-babel": "^0.0.5"
   },
   "name": "zeropack-support-coffeescript",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "main": "index.coffee"
 }

@@ -2,9 +2,9 @@
   "dependencies": {
     "ts-loader": "^2.3.7",
     "typescript": "^2.5.3",
-    "zeropack-support-babel": "^0.0.2"
+    "zeropack-support-babel": "^0.0.5"
   },
   "name": "zeropack-support-typescript",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "main": "index.coffee"
 }
