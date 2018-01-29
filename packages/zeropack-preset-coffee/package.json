@@ -9,10 +9,10 @@
     "zeropack-support-babel": "^0.0.5",
     "zeropack-support-coffeescript": "^0.0.5",
     "zeropack-support-css": "^0.0.2",
-    "zeropack-support-file": "^0.0.2",
+    "zeropack-support-file": "^0.0.6",
     "zeropack-support-sass": "^0.0.2"
   },
   "name": "zeropack-preset-coffee",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.coffee"
 }
