@@ -6,7 +6,8 @@ module.exports =
   output:
     #path
     filename: '[hash].[name].bundle.js'
-    chunkFilename: '[hash].[name].[id].chunk.js',
+    chunkFilename: '[hash].[name].[id].chunk.js'
+    publicPath: '/'
   module:
     rules: []
   resolve:
