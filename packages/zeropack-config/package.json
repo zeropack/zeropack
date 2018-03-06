@@ -3,6 +3,6 @@
     "lodash.defaultsdeep": "^4.6.0"
   },
   "name": "zeropack-config",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "main": "index.coffee"
 }

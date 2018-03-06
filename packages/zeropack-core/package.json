@@ -6,13 +6,13 @@
     "webpack": "^3.6.0",
     "zeropack-action-build": "^0.0.3",
     "zeropack-action-serve": "^0.0.5",
-    "zeropack-config": "^0.0.2",
+    "zeropack-config": "^0.0.7",
     "zeropack-fix-schema": "^0.0.1"
   },
   "bin": {
     "zeropack": "./bin/zeropack.js"
   },
   "name": "zeropack-core",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "index.coffee"
 }
