@@ -2,12 +2,12 @@
   "dependencies": {
     "ts-loader": "^2.3.7",
     "typescript": "^2.5.3",
-    "zeropack-support-babel": "^0.0.2"
+    "zeropack-support-babel": "^0.0.5"
   },
   "peerDependencies": {
     "fork-ts-checker-webpack-plugin": "^0.2.9",
   },
   "name": "zeropack-support-typescript",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "main": "index.coffee"
 }

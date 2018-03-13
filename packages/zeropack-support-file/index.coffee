@@ -1,4 +1,4 @@
-STATIC_FILES_REG_EX = /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/
+STATIC_FILES_REG_EX = /\.(ttf|eot|svg|png|jpg|jpeg|gif|woff(2)?)(\?[a-z0-9=&.]+)?$/
 
 file =
   loader: 'file-loader'
