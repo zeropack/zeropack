@@ -1,6 +1,6 @@
 {
   "name": "zeropack-plugin-progress-bar",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "main": "index.coffee",
   "dependencies": {
     "readline": "^1.3.0"
