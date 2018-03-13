@@ -5,8 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^2.4.0",
-    "mocha": "^4.0.1"
+    "lerna": "^2.9.0",
+    "mocha": "^4.1.0"
   },
   "author": "Victor Sych <victor.sych@gmail.com>"
 }
