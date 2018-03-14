@@ -6,7 +6,8 @@
   "license": "MIT",
   "devDependencies": {
     "lerna": "^2.9.0",
-    "mocha": "^4.1.0"
+    "mocha": "^5.0.4"
   },
-  "author": "Victor Sych <victor.sych@gmail.com>"
+  "author": "Victor Sych <victor.sych@gmail.com>",
+  "repository": "https://github.com/zeropack/zeropack"
 }

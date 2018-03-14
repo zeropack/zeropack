@@ -1,8 +1,11 @@
 {
   "dependencies": {
-    "html-webpack-plugin": "^2.30.1"
+    "html-webpack-plugin": "^3.0.6"
   },
   "name": "zeropack-plugin-index-html",
   "version": "0.0.2",
+  "description": "zeropack contrib package",
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT",
   "main": "index.coffee"
 }

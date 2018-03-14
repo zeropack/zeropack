@@ -1,8 +1,11 @@
 {
   "dependencies": {
-    "git-rev-sync": "^1.9.1"
+    "git-rev-sync": "^1.10.0"
   },
   "name": "zeropack-plugin-git-rev",
   "version": "0.0.2",
+  "description": "zeropack contrib package",
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT",
   "main": "index.coffee"
 }

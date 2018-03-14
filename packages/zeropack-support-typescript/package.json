@@ -1,9 +1,12 @@
 {
   "dependencies": {
-    "ts-loader": "^2.3.7",
-    "typescript": "^2.5.3",
+    "ts-loader": "^4.0.1",
+    "typescript": "^2.7.2",
     "zeropack-support-babel": "^0.0.5"
   },
+  "description": "zeropack contrib package",
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT",
   "name": "zeropack-support-typescript",
   "version": "0.0.5",
   "main": "index.coffee"

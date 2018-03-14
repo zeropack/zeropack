@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
+  },
+  "devDependencies": {
+    "zeropack-core": "latest",
+    "zeropack-preset-coffee": "latest"
+  },
+  "scripts": {
+    "start": "zeropack serve",
+    "serve": "zeropack serve",
+    "build": "zeropack build",
+    "test": "true"
+  },
+  "description": "zeropack contrib package",
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT",
+  "name": "zeropack-test-app-preset-coffee",
+  "version": "0.0.1"
+}

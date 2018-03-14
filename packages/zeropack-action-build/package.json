@@ -1,7 +1,10 @@
 {
   "dependencies": {
-    "clean-webpack-plugin": "^0.1.17"
+    "clean-webpack-plugin": "^0.1.19"
   },
+  "description": "zeropack contrib package",
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT",
   "name": "zeropack-action-build",
   "version": "0.0.3",
   "main": "index.coffee"

@@ -1,8 +1,15 @@
 {
   "dependencies": {
-    "extract-text-webpack-plugin": "^3.0.1"
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "zeropack-core": "0.0.7"
+  },
+  "peerDependencies": {
+    "zeropack-core": ">=0.0.1"
   },
   "name": "zeropack-plugin-extract-text",
   "version": "0.0.2",
+  "description": "zeropack contrib package",
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT",
   "main": "index.coffee"
 }

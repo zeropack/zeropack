@@ -3,7 +3,7 @@
     "bundle-loader": "^0.5.5",
     "coffeescript": "^2.0.1",
     "dotenv": "^4.0.0",
-    "webpack": "^3.6.0",
+    "webpack": "^4.1.1",
     "zeropack-action-build": "^0.0.3",
     "zeropack-action-serve": "^0.0.5",
     "zeropack-config": "^0.0.7",

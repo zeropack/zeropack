@@ -1,0 +1,7 @@
+.header1{
+  font-size: 300%;
+}
+
+h1{
+  @extend .header1;
+}
