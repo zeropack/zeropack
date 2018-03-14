@@ -6,6 +6,6 @@
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-file",
-  "version": "0.0.6",
+  "version": "0.0.10",
   "main": "index.coffee"
 }

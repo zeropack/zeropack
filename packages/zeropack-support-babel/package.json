@@ -11,6 +11,6 @@
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-babel",
-  "version": "0.0.5",
+  "version": "0.0.10",
   "main": "index.coffee"
 }

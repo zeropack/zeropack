@@ -1,6 +1,6 @@
 {
   "name": "zeropack-fix-schema",
-  "version": "0.0.1",
+  "version": "0.0.10",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
