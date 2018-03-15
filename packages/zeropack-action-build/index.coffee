@@ -3,7 +3,6 @@ CleanWebpackPlugin = require 'clean-webpack-plugin'
 
 module.exports = ({webpackConfig}) ->
   plugins = [
-    new Webpack.optimize.UglifyJsPlugin()
     new Webpack.DefinePlugin {
       'process.env.NODE_ENV': '"production"'
       'process.env.BROWSER': true
