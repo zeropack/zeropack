@@ -2,10 +2,8 @@
   "dependencies": {
     "coffee-loader": "^0.9.0",
     "coffeescript": "^2.2.3",
-    "zeropack-support-babel": "^0.0.13"
-  },
-  "peerDependencies": {
-    "zeropack-core": "^0.0.12"
+    "zeropack-support-babel": "^0.0.13",
+    "zeropack-core": "^0.0.13"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",

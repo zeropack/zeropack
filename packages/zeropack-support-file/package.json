@@ -1,9 +1,7 @@
 {
   "dependencies": {
-    "file-loader": "^1.1.11"
-  },
-  "peerDependencies": {
-    "zeropack-core": "^0.0.12"
+    "file-loader": "^1.1.11",
+    "zeropack-core": "^0.0.13"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",

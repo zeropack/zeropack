@@ -3,10 +3,8 @@
     "css-loader": "^0.28.10",
     "node-sass": "^4.8.2",
     "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3"
-  },
-  "peerDependencies": {
-    "zeropack-core": "^0.0.12"
+    "style-loader": "^0.20.3",
+    "zeropack-core": "^0.0.13"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",

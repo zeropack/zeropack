@@ -1,10 +1,9 @@
 {
   "dependencies": {
-    "git-rev-sync": "^1.10.0"
+    "git-rev-sync": "^1.10.0",
+    "zeropack-core": "^0.0.13"
   },
-  "peerDependencies": {
-    "zeropack-core": "^0.0.12"
-  },
+
   "name": "zeropack-plugin-git-rev",
   "version": "0.0.13",
   "description": "zeropack contrib package",

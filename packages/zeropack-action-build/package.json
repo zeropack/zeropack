@@ -1,9 +1,7 @@
 {
   "dependencies": {
-    "clean-webpack-plugin": "^0.1.19"
-  },
-  "peerDependencies": {
-    "zeropack-core": "^0.0.12"
+    "clean-webpack-plugin": "^0.1.19",
+    "zeropack-core": "^0.0.13"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",

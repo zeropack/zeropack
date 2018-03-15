@@ -1,9 +1,7 @@
 {
   "dependencies": {
-    "lodash.defaultsdeep": "^4.6.0"
-  },
-  "peerDependencies": {
-    "zeropack-core": "^0.0.12"
+    "lodash.defaultsdeep": "^4.6.0",
+    "zeropack-core": "^0.0.13"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",

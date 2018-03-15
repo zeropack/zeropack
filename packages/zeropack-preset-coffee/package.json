@@ -10,10 +10,8 @@
     "zeropack-support-coffeescript": "^0.0.13",
     "zeropack-support-css": "^0.0.13",
     "zeropack-support-file": "^0.0.13",
-    "zeropack-support-sass": "^0.0.13"
-  },
-  "peerDependencies": {
-    "zeropack-core": "^0.0.12"
+    "zeropack-support-sass": "^0.0.13",
+    "zeropack-core": "^0.0.13"
   },
   "name": "zeropack-preset-coffee",
   "version": "0.0.13",

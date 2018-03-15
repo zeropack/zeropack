@@ -2,10 +2,8 @@
   "dependencies": {
     "ts-loader": "^4.0.1",
     "typescript": "^2.7.2",
-    "zeropack-support-babel": "^0.0.13"
-  },
-  "peerDependencies": {
-    "zeropack-core": "^0.0.12"
+    "zeropack-support-babel": "^0.0.13",
+    "zeropack-core": "^0.0.13"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
