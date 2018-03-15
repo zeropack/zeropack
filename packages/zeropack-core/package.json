@@ -4,15 +4,15 @@
     "coffeescript": "^2.0.1",
     "dotenv": "^4.0.0",
     "webpack": "^4.1.1",
-    "zeropack-action-build": "^0.0.13",
-    "zeropack-action-serve": "^0.0.13",
-    "zeropack-config": "^0.0.13",
+    "zeropack-action-build": "^0.0.14",
+    "zeropack-action-serve": "^0.0.14",
+    "zeropack-config": "^0.0.14",
     "zeropack-fix-schema": "^0.0.10"
   },
   "bin": {
     "zeropack": "./bin/zeropack.js"
   },
   "name": "zeropack-core",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "index.coffee"
 }

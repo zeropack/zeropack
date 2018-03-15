@@ -1,11 +1,10 @@
 {
   "dependencies": {
     "git-rev-sync": "^1.10.0",
-    "zeropack-core": "^0.0.13"
+    "zeropack-core": "^0.0.14"
   },
-
   "name": "zeropack-plugin-git-rev",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
