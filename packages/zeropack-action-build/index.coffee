@@ -10,6 +10,7 @@ module.exports = ({webpackConfig}) ->
     }
     new CleanWebpackPlugin [webpackConfig.output.path], allowExternal: true, verbose: false
   ]
+  webpackConfig.mode = 'production'
   webpackConfig.plugins.unshift plugins...
   compiler = Webpack webpackConfig
   compiler.run (err, stats) ->
