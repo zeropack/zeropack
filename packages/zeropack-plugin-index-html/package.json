@@ -6,7 +6,7 @@
     "zeropack-core": "^0.0.12"
   },
   "name": "zeropack-plugin-index-html",
-  "version": "0.0.10",
+  "version": "0.0.13",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",

@@ -9,6 +9,6 @@
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
-  "version": "0.0.10",
+  "version": "0.0.13",
   "main": "index.coffee"
 }

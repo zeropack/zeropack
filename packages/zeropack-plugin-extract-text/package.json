@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "zeropack-core": "^0.0.12"
+    "zeropack-core": "^0.0.13"
   },
   "peerDependencies": {
     "zeropack-core": "^0.0.12"
   },
   "name": "zeropack-plugin-extract-text",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",

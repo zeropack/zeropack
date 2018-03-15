@@ -12,6 +12,6 @@
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-sass",
-  "version": "0.0.10",
+  "version": "0.0.13",
   "main": "index.coffee"
 }
