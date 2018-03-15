@@ -4,8 +4,8 @@
     "react-dom": "16.0.0"
   },
   "devDependencies": {
-    "zeropack-core": "latest",
-    "zeropack-preset-coffee": "latest"
+    "zeropack-core": "^0.0.12",
+    "zeropack-preset-coffee": "^0.0.12"
   },
   "scripts": {
     "start": "zeropack serve",

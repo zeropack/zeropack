@@ -1,8 +1,8 @@
 require './index.scss'
 
-React = require 'react'
+import React from 'react'
 import {render} from 'react-dom'
+import App from './app1'
 
-app = <h1>Hello world</h1>
 appNode = document.getElementById 'app'
-render app, appNode
+render <App/>, appNode

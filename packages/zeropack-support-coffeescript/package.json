@@ -4,6 +4,9 @@
     "coffeescript": "^2.2.3",
     "zeropack-support-babel": "^0.0.10"
   },
+  "peerDependencies": {
+    "zeropack-core": "^0.0.12"
+  },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",

@@ -2,6 +2,9 @@
   "dependencies": {
     "webpack-dev-server": "^3.1.1"
   },
+  "peerDependencies": {
+    "zeropack-core": "^0.0.12"
+  },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",

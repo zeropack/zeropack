@@ -13,7 +13,9 @@ module.exports = ({webpackConfig, builderConfig}) ->
   }
   compiler = Webpack webpackConfig
   server = new WebpackDevServer compiler,
+    historyApiFallback: true
     contentBase: webpackConfig.context
+    overlay: true
     stats:
       chunks: false
       colors: true

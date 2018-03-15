@@ -13,7 +13,7 @@
     "zeropack-support-sass": "^0.0.10"
   },
   "peerDependencies": {
-    "zeropack-core": ">=0.0.1"
+    "zeropack-core": "^0.0.12"
   },
   "name": "zeropack-preset-coffee",
   "version": "0.0.12",

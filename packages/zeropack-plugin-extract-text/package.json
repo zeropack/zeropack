@@ -4,7 +4,7 @@
     "zeropack-core": "^0.0.12"
   },
   "peerDependencies": {
-    "zeropack-core": ">=0.0.1"
+    "zeropack-core": "^0.0.12"
   },
   "name": "zeropack-plugin-extract-text",
   "version": "0.0.12",

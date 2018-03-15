@@ -2,6 +2,9 @@
   "dependencies": {
     "html-webpack-plugin": "^3.0.6"
   },
+  "peerDependencies": {
+    "zeropack-core": "^0.0.12"
+  },
   "name": "zeropack-plugin-index-html",
   "version": "0.0.10",
   "description": "zeropack contrib package",

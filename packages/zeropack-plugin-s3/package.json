@@ -2,6 +2,9 @@
   "dependencies": {
     "webpack-s3-plugin": "^1.0.0-rc.0"
   },
+  "peerDependencies": {
+    "zeropack-core": "^0.0.12"
+  },
   "name": "zeropack-plugin-s3",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",

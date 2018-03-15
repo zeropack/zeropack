@@ -3,6 +3,9 @@
     "css-loader": "^0.28.10",
     "style-loader": "^0.20.3"
   },
+  "peerDependencies": {
+    "zeropack-core": "^0.0.12"
+  },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
