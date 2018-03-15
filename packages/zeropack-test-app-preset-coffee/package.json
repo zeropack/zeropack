@@ -4,8 +4,8 @@
     "react-dom": "16.0.0"
   },
   "devDependencies": {
-    "zeropack-core": "^0.0.14",
-    "zeropack-preset-coffee": "^0.0.14"
+    "zeropack-core": "^0.0.15",
+    "zeropack-preset-coffee": "^0.0.15"
   },
   "scripts": {
     "start": "zeropack serve",
@@ -17,5 +17,5 @@
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-test-app-preset-coffee",
-  "version": "0.0.14"
+  "version": "0.0.15"
 }

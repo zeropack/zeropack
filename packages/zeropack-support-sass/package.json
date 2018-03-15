@@ -4,12 +4,12 @@
     "node-sass": "^4.8.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
-    "zeropack-core": "^0.0.14"
+    "zeropack-core": "^0.0.15"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-sass",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "main": "index.coffee"
 }
