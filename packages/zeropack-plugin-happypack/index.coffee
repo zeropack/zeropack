@@ -12,7 +12,8 @@ module.exports = ({webpackConfig}) ->
     styleLoader = null
     if rule.use?[0]?.loader is 'style-loader'
       styleLoader = rule.use.shift()
-    rule.use.unshift 'cache-loader'
+    else
+      rule.use.unshift 'cache-loader'
     plugins.push new HappyPack
       id: rule.id
       threadPool: happyThreadPool
