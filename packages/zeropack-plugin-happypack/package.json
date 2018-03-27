@@ -5,7 +5,7 @@
     "zeropack-core": "^0.0.15"
   },
   "name": "zeropack-plugin-happypack",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
