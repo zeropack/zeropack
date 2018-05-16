@@ -4,6 +4,7 @@
     "css-loader": "^0.28.10",
     "postcss-loader": "^2.1.5",
     "style-loader": "^0.20.3",
+    "postcss-loader": "^2.1.5",
     "zeropack-core": "^0.0.15"
   },
   "description": "zeropack contrib package",

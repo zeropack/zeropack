@@ -7,13 +7,21 @@ css =
   options:
     minimize: true
 
+postCss =
+  loader: 'postcss-loader'
+  options:
+    plugins: [
+      require('autoprefixer')({ browsers: ['last 2 versions'] })
+    ]
+
 sass =
   loader: 'sass-loader'
+
 
 module.exports = ({webpackConfig}) ->
   rule =
     id: 'sass'
     test: /\.scss$/,
-    use: [style, css, sass]
+    use: [style, css, postCss, sass]
   webpackConfig.module.rules.push rule
   webpackConfig.resolve.extensions.push '.scss'
