@@ -11,7 +11,7 @@ postCss =
   loader: 'postcss-loader'
   options:
     plugins: [
-      require('autoprefixer')()
+      require('autoprefixer')({ browsers: ['last 2 versions'] })
     ]
 
 module.exports = ({webpackConfig}) ->
