@@ -1,7 +1,9 @@
 .header1{
   font-size: 300%;
+  display: grid;
 }
 
 h1{
   @extend .header1;
+  display: flex;
 }
