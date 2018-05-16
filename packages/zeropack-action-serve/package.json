@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "webpack-dev-server": "^3.1.1",
-    "zeropack-core": "^0.0.19"
+    "zeropack-core": "^0.0.20"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-action-serve",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "main": "index.coffee"
 }
