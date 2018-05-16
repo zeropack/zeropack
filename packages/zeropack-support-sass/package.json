@@ -1,17 +1,14 @@
 {
   "dependencies": {
-    "autoprefixer": "^8.5.0",
-    "css-loader": "^0.28.10",
     "node-sass": "^4.8.2",
-    "postcss-loader": "^2.1.5",
     "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3",
-    "zeropack-core": "^0.0.15"
+    "zeropack-core": "^0.0.19",
+    "zeropack-support-css": "^0.0.19"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-sass",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "main": "index.coffee"
 }

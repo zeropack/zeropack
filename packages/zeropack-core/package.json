@@ -1,18 +1,18 @@
 {
   "dependencies": {
     "bundle-loader": "^0.5.5",
-    "coffeescript": "^2.0.1",
+    "coffeescript": "^2.2.3",
     "dotenv": "^4.0.0",
     "webpack": "^4.1.1",
-    "zeropack-action-build": "^0.0.15",
-    "zeropack-action-serve": "^0.0.15",
-    "zeropack-config": "^0.0.15",
+    "zeropack-action-build": "^0.0.19",
+    "zeropack-action-serve": "^0.0.19",
+    "zeropack-config": "^0.0.19",
     "zeropack-fix-schema": "^0.0.10"
   },
   "bin": {
     "zeropack": "./bin/zeropack.js"
   },
   "name": "zeropack-core",
-  "version": "0.0.15",
+  "version": "0.0.19",
   "main": "index.coffee"
 }

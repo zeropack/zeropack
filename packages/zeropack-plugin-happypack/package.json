@@ -2,10 +2,10 @@
   "dependencies": {
     "cache-loader": "^1.2.2",
     "happypack": "^5.0.0-beta.1",
-    "zeropack-core": "^0.0.15"
+    "zeropack-core": "^0.0.19"
   },
   "name": "zeropack-plugin-happypack",
-  "version": "0.0.16",
+  "version": "0.0.19",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
