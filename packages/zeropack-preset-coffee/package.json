@@ -9,11 +9,11 @@
     "zeropack-plugin-progress-bar": "^0.0.15",
     "zeropack-support-babel": "^0.0.15",
     "zeropack-support-coffeescript": "^0.0.15",
-    "zeropack-support-css": "^0.0.15",
+    "zeropack-support-css": "^0.0.17",
     "zeropack-support-file": "^0.0.15",
-    "zeropack-support-sass": "^0.0.15"
+    "zeropack-support-sass": "^0.0.17"
   },
   "name": "zeropack-preset-coffee",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "main": "index.coffee"
 }

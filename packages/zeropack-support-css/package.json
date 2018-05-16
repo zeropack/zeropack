@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "autoprefixer": "^8.5.0",
     "css-loader": "^0.28.10",
+    "postcss-loader": "^2.1.5",
     "style-loader": "^0.20.3",
     "zeropack-core": "^0.0.15"
   },
@@ -8,6 +10,6 @@
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-css",
-  "version": "0.0.15",
+  "version": "0.0.17",
   "main": "index.coffee"
 }
