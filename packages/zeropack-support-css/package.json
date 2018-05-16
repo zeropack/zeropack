@@ -10,6 +10,6 @@
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-css",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "main": "index.coffee"
 }

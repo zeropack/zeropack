@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "zeropack-core": "^0.0.15",
-    "zeropack-preset-coffee": "^0.0.17"
+    "zeropack-preset-coffee": "^0.0.18"
   },
   "scripts": {
     "start": "zeropack serve",
@@ -17,5 +17,5 @@
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-test-app-preset-coffee",
-  "version": "0.0.17"
+  "version": "0.0.18"
 }
