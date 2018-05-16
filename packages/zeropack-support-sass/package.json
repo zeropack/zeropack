@@ -4,7 +4,6 @@
     "css-loader": "^0.28.10",
     "node-sass": "^4.8.2",
     "postcss-loader": "^2.1.5",
-    "resolve-url-loader": "^2.3.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "zeropack-core": "^0.0.15"

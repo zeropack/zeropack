@@ -7,9 +7,6 @@ css =
   options:
     minimize: true
 
-resolveUrl =
-  loader: 'resolve-url-loader'
-
 postCss =
   loader: 'postcss-loader'
   options:
@@ -17,12 +14,11 @@ postCss =
       require('autoprefixer')()
     ]
 
-
 module.exports = ({webpackConfig}) ->
   rule =
     id: 'css'
     test: /\.css$/,
-    use: [style, css, resolveUrl, postCss]
-    
+    use: [style, css, postCss]
+
   webpackConfig.module.rules.push rule
   webpackConfig.resolve.extensions.push '.css'
