@@ -2,4 +2,4 @@
 
 require('coffeescript/register')
 
-require('../index.coffee')
+require('../execute.coffee')

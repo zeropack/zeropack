@@ -14,25 +14,25 @@ context =
 applyMiddleware = (name) ->
   rootFirstRequire(name)(context)
 
-applyMiddleware 'zeropack-config'
+generateContext = ->
+  applyMiddleware 'zeropack-config'
 
-middlewares = []
+  middlewares = []
 
-if context.builderConfig.preset
-  preset = rootFirstRequire(context.builderConfig.preset)
-  middlewares.push preset.middlewares...
+  if context.builderConfig.preset
+    preset = rootFirstRequire(context.builderConfig.preset)
+    middlewares.push preset.middlewares...
 
-if context.builderConfig.plugins
-  middlewares.unshift context.builderConfig.plugins...
+  if context.builderConfig.plugins
+    middlewares.unshift context.builderConfig.plugins...
 
-actionName = process.argv[2]
+  middlewares.push 'zeropack-fix-schema'
 
-action = context.builderConfig.actions[actionName]
+  middlewares.map applyMiddleware
 
-if action.plugins
-  middlewares.unshift action.plugins...
+  context
 
-middlewares.push 'zeropack-fix-schema'
-middlewares.push action.action
-
-middlewares.map applyMiddleware
+module.exports = {
+  generateContext,
+  applyMiddleware
+}

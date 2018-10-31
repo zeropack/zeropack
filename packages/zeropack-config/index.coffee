@@ -17,6 +17,8 @@ module.exports = (context) ->
         action: 'zeropack-action-serve'
       build:
         action: 'zeropack-action-build'
+      storybook:
+        action: 'zeropack-action-storybook'
 
   userBuilderConfig = {}
 
