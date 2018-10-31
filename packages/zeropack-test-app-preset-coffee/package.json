@@ -5,13 +5,16 @@
   },
   "devDependencies": {
     "zeropack-core": "^0.0.20",
-    "zeropack-preset-coffee": "^0.0.20"
+    "zeropack-preset-coffee": "^0.0.20",
+    "zeropack-storybook": "^0.0.20"
   },
   "scripts": {
     "start": "zeropack serve",
     "serve": "zeropack serve",
     "build": "zeropack build",
-    "test": "true"
+    "test": "true",
+    "storybook-start": "zeropack-storybook start",
+    "storybook-build": "zeropack-storybook build"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",

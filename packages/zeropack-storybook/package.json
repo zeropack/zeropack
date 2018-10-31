@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@storybook/addon-actions": "^4.0.2",
+    "@storybook/addon-knobs": "^4.0.2",
+    "@storybook/addon-options": "^4.0.2",
+    "@storybook/react": "^4.0.2",
+    "zeropack-core": "^0.0.20"
+  },
+  "description": "zeropack contrib package",
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT",
+  "directories": {
+    "bin": "./bin"
+  },
+  "name": "zeropack-storybook",
+  "version": "0.0.20",
+  "main": "index.coffee"
+}
