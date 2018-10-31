@@ -14,5 +14,5 @@
   },
   "name": "zeropack-storybook",
   "version": "0.0.20",
-  "main": "index.coffee"
+  "main": "index.js"
 }

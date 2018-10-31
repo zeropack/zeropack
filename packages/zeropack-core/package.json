@@ -9,8 +9,8 @@
     "zeropack-config": "^0.0.20",
     "zeropack-fix-schema": "^0.0.10"
   },
-  "bin": {
-    "zeropack": "./bin/zeropack.js"
+  "directories": {
+    "bin": "./bin"
   },
   "name": "zeropack-core",
   "version": "0.0.20",

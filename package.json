@@ -1,13 +1,16 @@
 {
-  "dependencies": {},
-  "name": "zeropack",
-  "version": "0.0.1",
-  "main": "index.js",
-  "license": "MIT",
+  "private": true,
+  "version": "0.0.20",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {},
   "devDependencies": {
-    "lerna": "^2.9.0",
-    "mocha": "^5.0.4"
+    "lerna": "^3.4.0",
+    "mocha": "^5.2.0"
   },
   "author": "Victor Sych <victor.sych@gmail.com>",
-  "repository": "https://github.com/zeropack/zeropack"
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT"
 }
