@@ -1,0 +1,19 @@
+{
+  "name": "ui-components",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "storybook-start": "zeropack-storybook start",
+    "storybook-build": "zeropack-storybook build"
+  },
+  "dependencies": {
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
+  },
+  "devDependencies": {
+    "zeropack-core": "^0.0.20",
+    "zeropack-preset-coffee": "^0.0.20",
+    "zeropack-storybook": "^0.0.20"
+  }
+}
