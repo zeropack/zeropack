@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-require('coffeescript/register')
+require('coffeescript/register');
 
-require('../execute.coffee')
+require('../execute.coffee');

@@ -1,19 +1,22 @@
 const path = require('path');
 const { exec } = require('child_process');
 
-// # let binPath = process.execPath + ' ' + path.resolve(require.resolve('@storybook/react'), '..', '..', 'server', 'index.js');
-// # let args = ['-p 9001', '-c ' + path.resolve(require.resolve('../storybook-config/config.js'), '..')]
-// # binPath = binPath + ' ' + args.join(' ')
-// # let sbServer = exec(binPath, {maxBuffer : 500 * 1024}, (error) => {
-// #   console.log(error)
-// # });
-// # console.log(binPath);
-// # sbServer.stdout.pipe(process.stdout);
-// # sbServer.stderr.pipe(process.stderr);
-// # sbServer.on('exit', (e) =>{
-// #   console.log(e)
-// # });
+const action = process.argv[2];
+const actions = ['start', 'end'];
+if (!actions.includes(action)) {
+  console.error(`Action '${action}' not available, please use one of: ${actions.join(', ')}`);
+  process.exit(1);
+}
 
-console.log(process.execPath);
-
-// # const sbProcess = exec("")
+const userArgs = process.argv.slice(3);
+const args = [
+  '-p 9090',
+  `-c ${path.resolve(__dirname, '.storybook')}`,
+  ...userArgs
+];
+const cmd = `npx ${action}-storybook ${args.join(' ')}`;
+const sbProc = exec(cmd, {maxBuffer : 500 * 1024}, (error) => {
+  console.error(error);
+});
+sbProc.stdout.pipe(process.stdout);
+sbProc.stderr.pipe(process.stderr);

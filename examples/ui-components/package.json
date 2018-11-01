@@ -4,8 +4,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "storybook-start": "zeropack-storybook start",
-    "storybook-build": "zeropack-storybook build"
+    "start": "zeropack-storybook start",
+    "build": "zeropack-storybook build"
   },
   "dependencies": {
     "react": "16.0.0",
