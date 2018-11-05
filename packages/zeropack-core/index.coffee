@@ -1,9 +1,10 @@
 path = require 'path'
+dotenv = require 'dotenv'
 rootFirstRequire = require './root-first-require'
 
 process.env.BUILDER_ENV ||= 'development'
 
-require('dotenv').config
+dotenv.config
   path: path.resolve(process.cwd(), ".env.#{process.env.BUILDER_ENV}")
   silent: true
 

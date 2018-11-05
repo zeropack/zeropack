@@ -26,10 +26,8 @@ module.exports = (baseConfig, env) => {
     ],
   });
 
-  // TODO: extend babel config in zeropack from storybook
-  console.log(zeropackConfig.plugins[4].config);
-  console.log('!!!!!!!!!!!!');
-  console.log(zeropackConfig.plugins[4].config.loaders[1]);
+  // TODO: extend babel config in zeropack from storybook docgen
+  console.log('happypack babel:', zeropackConfig.plugins[4].config.loaders[1]);
 
   return config;
 };

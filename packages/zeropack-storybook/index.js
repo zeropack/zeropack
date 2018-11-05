@@ -17,7 +17,7 @@ const args = [
 ];
 
 // const sbProc = spawn('npx', args);
-const sbProc = exec(`npx ${args.join(' ')}`, { maxBuffer: 10 * 1024 * 1024 }, (error) => {
+const sbProc = exec(`npx ${args.join(' ')}`, { maxBuffer: 10 * 1024 * 1024 }, error => {
   console.error('storybook process error:', error);
 });
 

@@ -24,6 +24,4 @@ const Obj = {
   ),
 };
 
-
-
 module.exports = { Arr, Obj };
