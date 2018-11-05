@@ -2,8 +2,8 @@
   "private": true,
   "version": "0.0.20",
   "workspaces": [
-    "packages/*",
-    "examples/*"
+    "examples/*",
+    "packages/*"
   ],
   "scripts": {},
   "devDependencies": {
