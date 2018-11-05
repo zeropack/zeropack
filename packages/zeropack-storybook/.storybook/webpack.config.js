@@ -24,6 +24,9 @@ module.exports = (baseConfig, env) => {
       // TODO: check if need exclude ProgressPlugin
       ...Arr.pluginsWithout(zeropackConfig, 'HtmlWebpackPlugin', 'ProgressPlugin')
     ],
+    node: {
+      fs: 'empty' // Fixed: Can't resolve 'fs'
+    },
   });
 
   // TODO: extend babel config in zeropack from storybook docgen
