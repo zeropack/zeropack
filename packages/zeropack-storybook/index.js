@@ -1,5 +1,5 @@
 const path = require('path');
-const { exec } = require('child_process');
+const { spawn, exec } = require('child_process');
 
 const action = process.argv[2];
 const actions = ['start', 'end'];
@@ -10,13 +10,20 @@ if (!actions.includes(action)) {
 
 const userArgs = process.argv.slice(3);
 const args = [
+  `${action}-storybook`,
   '-p 9090',
   `-c ${path.resolve(__dirname, '.storybook')}`,
   ...userArgs
 ];
-const cmd = `npx ${action}-storybook ${args.join(' ')}`;
-const sbProc = exec(cmd, {maxBuffer : 500 * 1024}, (error) => {
-  console.error(error);
+
+// const sbProc = spawn('npx', args);
+const sbProc = exec(`npx ${args.join(' ')}`, { maxBuffer: 10 * 1024 * 1024 }, (error) => {
+  console.error('storybook process error:', error);
 });
+
 sbProc.stdout.pipe(process.stdout);
 sbProc.stderr.pipe(process.stderr);
+sbProc.on('close', code => {
+  console.log(`storybook process exited with code ${code}`);
+  process.exit(code);
+});

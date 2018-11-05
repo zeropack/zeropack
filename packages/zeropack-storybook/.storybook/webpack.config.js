@@ -17,7 +17,7 @@ module.exports = (baseConfig, env) => {
       alias: Obj.deepPropMerge('resolve.alias', baseConfig, zeropackConfig)
     },
     module: {
-
+      rules: zeropackConfig.module.rules
     },
     plugins: [
       ...baseConfig.plugins,
@@ -25,6 +25,11 @@ module.exports = (baseConfig, env) => {
       ...Arr.pluginsWithout(zeropackConfig, 'HtmlWebpackPlugin', 'ProgressPlugin')
     ],
   });
+
+  // TODO: extend babel config in zeropack from storybook
+  console.log(zeropackConfig.plugins[4].config);
+  console.log('!!!!!!!!!!!!');
+  console.log(zeropackConfig.plugins[4].config.loaders[1]);
 
   return config;
 };
