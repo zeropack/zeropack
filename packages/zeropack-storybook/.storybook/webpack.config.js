@@ -12,15 +12,16 @@ module.exports = (baseConfig, env) => {
     Obj.pick(baseConfig, 'mode', 'devtool', 'entry', 'output', 'performance'),
     Obj.pick(zeropackConfig, 'context'), {
     resolve: {
-      extensions: Arr.uniqueMerge(baseConfig, zeropackConfig, 'resolve.extensions'),
-      modules: Arr.uniqueMerge(baseConfig, zeropackConfig, 'resolve.modules'),
-      alias: Obj.deepPropMerge(baseConfig, zeropackConfig, 'resolve.alias')
+      extensions: Arr.deepUniq('resolve.extensions', baseConfig, zeropackConfig),
+      modules: Arr.deepUniq('resolve.modules', baseConfig, zeropackConfig),
+      alias: Obj.deepPropMerge('resolve.alias', baseConfig, zeropackConfig)
     },
     module: {},
-    plugins: [],
+    plugins: [
+      ...baseConfig.plugins,
+      ...Arr.pluginsWithout(zeropackConfig, 'HtmlWebpackPlugin')
+    ],
   });
-
-  // webpackConfig.plugins.push(...baseConfig.plugins);  
 
   return config;
 };
