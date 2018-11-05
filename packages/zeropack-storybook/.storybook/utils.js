@@ -1,14 +1,17 @@
 const _ = require('lodash');
 
 const Arr = {
-  deepUniq: (deepKey, ...objects) => (
-    _.union(...objects.map(
+  mapGet: (objects, deepKey) => (
+    objects.map(
       obj => _.get(obj, deepKey)
-    ))
+    )
   ),
-  pluginsWithout: (config, pluginName) => (
+  deepUniq: (deepKey, ...objects) => (
+    _.union(...Arr.mapGet(objects, deepKey))
+  ),
+  pluginsWithout: (config, ...exclude) => (
     _.filter(config.plugins, plugin =>
-      !plugin.constructor || plugin.constructor.name != pluginName
+      !plugin.constructor || !exclude.includes(plugin.constructor.name)
     )
   ),
 };
@@ -16,12 +19,11 @@ const Arr = {
 const Obj = {
   pick: (obj, ...keys) => _.pick(obj, keys),
   merge: (...objects) => _.assign({}, ...objects),
-  deepPropMerge: (obj1, obj2, deepKey) => (
-    Obj.merge(
-      _.get(obj1, deepKey),
-      _.get(obj2, deepKey)
-    )
+  deepPropMerge: (deepKey, ...objects) => (
+    Obj.merge(...Arr.mapGet(objects, deepKey))
   ),
 };
+
+
 
 module.exports = { Arr, Obj };

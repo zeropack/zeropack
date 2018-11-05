@@ -16,10 +16,13 @@ module.exports = (baseConfig, env) => {
       modules: Arr.deepUniq('resolve.modules', baseConfig, zeropackConfig),
       alias: Obj.deepPropMerge('resolve.alias', baseConfig, zeropackConfig)
     },
-    module: {},
+    module: {
+
+    },
     plugins: [
       ...baseConfig.plugins,
-      ...Arr.pluginsWithout(zeropackConfig, 'HtmlWebpackPlugin')
+      // TODO: check if need exclude ProgressPlugin
+      ...Arr.pluginsWithout(zeropackConfig, 'HtmlWebpackPlugin', 'ProgressPlugin')
     ],
   });
 
