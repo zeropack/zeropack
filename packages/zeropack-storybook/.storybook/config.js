@@ -1,7 +1,10 @@
-import path from 'path';
-import {configure} from '@storybook/react';
+import 'coffeescript/register';
+import * as storybook from '@storybook/react';
 // import {setOptions} from '@storybook/addon-options';
-import {generateContext} from 'zeropack-core';
+import { generateContext } from 'zeropack-core'; // requires coffeescript
+import path from 'path';
+
+console.log('!!!!!!!!!!!! CONFIG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
 
 // addon-options
 //setOptions({
@@ -11,11 +14,13 @@ import {generateContext} from 'zeropack-core';
 //});
 
 // load stories
-configure(() => {
-  {webpackConfig} = generateContext();
+storybook.configure(() => {
+  const { webpackConfig } = generateContext();
   console.log('webpackConfig in config.js', webpackConfig);
   const storiesContext = require.context(
-    path.resolve(process.cwd(), 'src'),
+    '.', // context already set for src in webpack config
+    // or need to try webpackConfig.context
+    // this is last try path.resolve(process.cwd(), 'src'),
     true,
     /\.(story|stories)\.(js|coffee)$/,
   );
