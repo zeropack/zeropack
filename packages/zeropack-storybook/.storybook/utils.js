@@ -18,7 +18,7 @@ const Arr = {
 
 const Obj = {
   pick: (obj, ...keys) => _.pick(obj, keys),
-  merge: (...objects) => _.assign({}, ...objects),
+  merge: (...objects) => _.merge({}, ...objects),
   deepPropMerge: (deepKey, ...objects) => (
     Obj.merge(...Arr.mapGet(objects, deepKey))
   ),
