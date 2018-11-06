@@ -2,6 +2,7 @@
   "name": "ui-components",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://github.com/zeropack/zeropack/tree/master/examples/ui-components",
   "license": "MIT",
   "scripts": {
     "start": "zeropack-storybook start",

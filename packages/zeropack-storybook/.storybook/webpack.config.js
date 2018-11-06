@@ -20,7 +20,8 @@ module.exports = (baseConfig, env) => {
         extensions: Arr.deepUniq('resolve.extensions', baseConfig, zeropackConfig),
         modules: Arr.deepUniq('resolve.modules', baseConfig, zeropackConfig),
         alias: Obj.merge(Obj.deepPropMerge('resolve.alias', baseConfig, zeropackConfig), {
-          ZeropackContext: zeropackConfig.context
+          ZeropackContext: zeropackConfig.context,
+          PackageJson$: path.resolve(process.cwd(), 'package.json'),
         }),
       },
       plugins: [

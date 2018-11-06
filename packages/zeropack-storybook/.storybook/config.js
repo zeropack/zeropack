@@ -1,16 +1,22 @@
 import * as storybook from '@storybook/react';
-// import {setOptions} from '@storybook/addon-options';
+import { withOptions } from '@storybook/addon-options';
+import startCase from 'lodash/startCase';
+
+import packageJson from 'PackageJson';
 
 // addon-options
-// setOptions({
-//   name: 'Analytics UI',
-//   url: 'http://git.nextiva.xyz/projects/ANA/repos/analytics-ui/browse',
-//   sortStoriesByKind: true,
-// });
+storybook.addDecorator(
+  withOptions({
+    name: startCase(packageJson.name),
+    url: packageJson.homepage,
+    sortStoriesByKind: true,
+    hierarchyRootSeparator: /\|/,
+    hierarchySeparator: /\//,
+  })
+);
 
-function loadStories() {
+// load stories
+storybook.configure(() => {
   const storiesContext = require.context('ZeropackContext', true, /\.(story|stories)\.(js|coffee)$/);
   storiesContext.keys().forEach(storiesContext);
-}
-
-storybook.configure(loadStories, module);
+}, module);
