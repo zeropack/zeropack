@@ -20,8 +20,7 @@ module.exports = (baseConfig, env) => {
     },
     plugins: [
       ...baseConfig.plugins,
-      // TODO: check if need exclude ProgressPlugin
-      ...Arr.pluginsWithout(zeropackConfig, 'HtmlWebpackPlugin', 'ProgressPlugin')
+      ...Arr.pluginsWithout(zeropackConfig, 'HtmlWebpackPlugin')
     ],
     node: {
       fs: 'empty' // Fixed: Can't resolve 'fs'
