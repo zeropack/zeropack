@@ -7,7 +7,7 @@ import packageJson from 'PackageJson'
 # addon-options
 storybook.addDecorator(
   withOptions({
-    name: startCase(packageJson.name)
+    name: "#{startCase(packageJson.name)} - #{packageJson.version}"
     url: packageJson.homepage
     sortStoriesByKind: true
     hierarchyRootSeparator: /\|/
