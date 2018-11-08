@@ -5,7 +5,9 @@
     "examples/*",
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "clean-nm": "rm -rf packages/**/node_modules && rm -rf node_modules"
+  },
   "devDependencies": {
     "lerna": "^3.4.0",
     "mocha": "^5.2.0"
