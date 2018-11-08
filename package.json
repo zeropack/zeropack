@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "clean-nm": "rm -rf packages/**/node_modules && rm -rf node_modules"
+    "clean": "./clean.sh"
   },
   "devDependencies": {
     "lerna": "^3.4.0",
