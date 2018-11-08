@@ -2,7 +2,7 @@ import * as storybook from '@storybook/react'
 import { withOptions } from '@storybook/addon-options'
 import startCase from 'lodash/startCase'
 
-import packageJson from 'PackageJson'
+import packageJson from '<rootDir>/package.json'
 
 console.log('GIT_META', GIT_META);
 
@@ -18,7 +18,11 @@ storybook.addDecorator(
 )
 
 # load stories
-storybook.configure () =>
-  storiesContext = require.context('ZeropackContext', true, /\.(story|stories)\.(js|coffee)$/)
-  storiesContext.keys().forEach(storiesContext)
-, module
+try
+  loadStories = require('<rootDir>/.storybook/loadStories').default
+catch
+  loadStories = () =>
+    storiesContext = require.context 'ZeropackContext', true, /\.(story|stories)\.(js|coffee)$/
+    storiesContext.keys().forEach storiesContext
+
+storybook.configure loadStories, module
