@@ -4,6 +4,8 @@ import startCase from 'lodash/startCase'
 
 import packageJson from 'PackageJson'
 
+console.log('GIT_META', GIT_META);
+
 # addon-options
 storybook.addDecorator(
   withOptions({
