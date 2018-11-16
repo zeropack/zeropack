@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "lodash.defaultsdeep": "^4.6.0",
-    "zeropack-core": "^0.0.20"
+    "zeropack-core": "0.1.0-alpha.0"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-config",
-  "version": "0.0.20",
+  "version": "0.1.0-alpha.0",
   "main": "index.coffee"
 }

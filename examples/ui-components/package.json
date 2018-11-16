@@ -1,6 +1,6 @@
 {
   "name": "ui-components",
-  "version": "1.0.0",
+  "version": "0.1.0-alpha.0",
   "private": true,
   "homepage": "https://github.com/zeropack/zeropack/tree/master/examples/ui-components",
   "license": "MIT",
@@ -13,8 +13,8 @@
     "react-dom": "^16.3.0"
   },
   "devDependencies": {
-    "zeropack-core": "^0.0.20",
-    "zeropack-preset-coffee": "^0.0.20",
-    "zeropack-storybook": "^0.0.20"
+    "zeropack-core": "0.1.0-alpha.0",
+    "zeropack-preset-coffee": "0.1.0-alpha.0",
+    "zeropack-storybook": "0.1.0-alpha.0"
   }
 }

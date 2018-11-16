@@ -1,6 +1,6 @@
 {
   "name": "zeropack-storybook",
-  "version": "0.0.20",
+  "version": "0.1.0-alpha.0",
   "main": "index.js",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
