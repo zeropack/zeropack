@@ -9,6 +9,7 @@
     "bin": "./bin"
   },
   "dependencies": {
+    "@storybook/addon-info": "^4.0.9",
     "@storybook/addon-actions": "^4.0.2",
     "@storybook/addon-knobs": "^4.0.2",
     "@storybook/addon-options": "^4.0.2",

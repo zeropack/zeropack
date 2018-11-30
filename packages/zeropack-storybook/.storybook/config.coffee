@@ -1,5 +1,7 @@
 import * as storybook from '@storybook/react'
 import { withOptions } from '@storybook/addon-options'
+import { withInfo } from '@storybook/addon-info'
+
 import startCase from 'lodash/startCase'
 
 import packageJson from '<rootDir>/package.json'
@@ -11,11 +13,12 @@ storybook.addDecorator(
   withOptions({
     name: "#{startCase(packageJson.name)} - #{packageJson.version}"
     url: packageJson.homepage
-    sortStoriesByKind: true
+    sortStoriesByKind: false
     hierarchyRootSeparator: /\|/
     hierarchySeparator: /\//
   })
 )
+storybook.addDecorator withInfo({header: false})
 
 # load stories
 try

@@ -11,10 +11,15 @@ if (!actions.includes(action)) {
 const userArgs = process.argv.slice(3);
 const args = [
   `${action}-storybook`,
-  '-p 9090',
   `-c ${path.resolve(__dirname, '.storybook')}`,
-  ...userArgs
 ];
+
+if(action === 'start') {
+  // avoid pass default port to build action
+  args.push('-p 9090')
+}
+args.push(...userArgs)
+
 
 // TODO: with spawn
 // const sbProc = spawn('npx', args);

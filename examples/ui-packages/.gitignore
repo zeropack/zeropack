@@ -1,2 +1,3 @@
 .cache
 .cache-loader
+.storybook-static
