@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "webpack-s3-plugin": "^1.0.0-rc.0",
-    "zeropack-core": "0.1.0-alpha.0"
+    "zeropack-core": "0.1.1-alpha.0"
   },
   "name": "zeropack-plugin-s3",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.1-alpha.0",
   "main": "index.coffee"
 }
