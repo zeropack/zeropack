@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "file-loader": "^1.1.11",
-    "zeropack-core": "^0.0.20"
+    "zeropack-core": "0.1.1-alpha.0"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-file",
-  "version": "0.0.20",
+  "version": "0.1.1-alpha.0",
   "main": "index.coffee"
 }

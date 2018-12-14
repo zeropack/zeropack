@@ -13,7 +13,8 @@ module.exports =
   resolve:
     modules: ['node_modules', path.resolve(__dirname, '..', '..', 'node_modules')]
     extensions: []
-    alias: {}
+    alias:
+      '<rootDir>': process.cwd()
   resolveLoader:
     modules: [path.resolve(__dirname, '..', '..', 'node_modules'), 'node_modules']
   plugins: []
