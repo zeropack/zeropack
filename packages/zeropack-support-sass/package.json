@@ -2,13 +2,13 @@
   "dependencies": {
     "node-sass": "^4.8.2",
     "sass-loader": "^6.0.7",
-    "zeropack-core": "0.1.1-alpha.0",
-    "zeropack-support-css": "0.1.1-alpha.0"
+    "zeropack-core": "0.2.0",
+    "zeropack-support-css": "0.2.0"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-sass",
-  "version": "0.1.1-alpha.0",
+  "version": "0.2.0",
   "main": "index.coffee"
 }
