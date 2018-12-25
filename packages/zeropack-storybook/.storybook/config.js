@@ -1,10 +1,12 @@
-import * as storybook from '@storybook/react'
+const storybook = require('@storybook/react');
 
 console.log('GIT_META', GIT_META);
 
-try
+let applyConfig;
+try {
   applyConfig = require('<rootDir>/.storybook/config').default
-catch
+} catch (e) {
   applyConfig = require('./defaultConfig').default
+}
 
-applyConfig(storybook)  
+applyConfig(storybook);
