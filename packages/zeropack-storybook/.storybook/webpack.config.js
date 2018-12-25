@@ -1,4 +1,5 @@
 require('coffeescript/register');
+const Webpack = require('webpack');
 const path = require('path');
 const _ = require('lodash');
 
@@ -12,7 +13,7 @@ module.exports = (baseConfig, env) => {
   // base rules|loaders
   const [baseBabelRule, baseBabelLoader] = Arr.findRuleAndLoader(baseConfig, 'babel-loader');
 
-  return Obj.merge(
+  const mergedWebpackConfig = Obj.merge(
     Obj.pick(baseConfig, 'mode', 'devtool', 'entry', 'output', 'performance'),
     Obj.pick(zeropackConfig, 'context', 'module'),
     {
@@ -46,4 +47,13 @@ module.exports = (baseConfig, env) => {
       },
     }
   );
+  // set development mode for avoiding minification
+  mergedWebpackConfig.mode = 'development';
+  mergedWebpackConfig.plugins.unshift(new Webpack.DefinePlugin({
+    'process.env.NODE_ENV': '"development"',
+    'process.env.BROWSER': true,
+    '__DEV__': true,
+  }));
+  console.log(mergedWebpackConfig);
+  return mergedWebpackConfig;
 };
