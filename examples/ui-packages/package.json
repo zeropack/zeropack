@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "zeropack-storybook start",
-    "build": "zeropack-storybook build"
+    "build": "zeropack-storybook build",
+    "storybook": "start-storybook -p 9001 -c ./.storybook -s public"
   },
   "dependencies": {
     "react": "^16.3.0",
