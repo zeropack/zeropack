@@ -1,6 +1,6 @@
 {
   "name": "zeropack-storybook",
-  "version": "0.2.2",
+  "version": "0.2.0",
   "main": "index.js",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
@@ -16,6 +16,6 @@
     "@storybook/react": "4.1.3"
   },
   "peerDependencies": {
-    "zeropack-core": "^0.0.20"
+    "zeropack-core": "0.3.0"
   }
 }

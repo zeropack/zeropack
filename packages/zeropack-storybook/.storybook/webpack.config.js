@@ -7,6 +7,15 @@ const { generateContext } = require('zeropack-core'); // requires coffeescript
 
 const { Arr, Obj } = require('./utils');
 
+const mergePresets = (presets) => {
+  const normalized = _.map(presets, (v) => _.isString(v) ? [v, {}] : v)
+  const grouped =_.groupBy(normalized, (v) => v[0]);
+  return _.map(grouped, (data, name) => {
+    const options = _.assign({}, ..._.map(data, (itemOptions)=>itemOptions[1]));
+    return _.isEmpty(options) ? name : [name, options]
+  })
+};
+
 module.exports = (baseConfig, env) => {
   const { webpackConfig: zeropackConfig } = generateContext();
 
@@ -33,7 +42,7 @@ module.exports = (baseConfig, env) => {
           if (pluginName === 'HappyPlugin') {
             const babelLoader = Arr.findLoader(plugin.config.loaders, 'babel-loader');
             if (babelLoader) {
-              const presets = Arr.deepUniq('options.presets', baseBabelLoader, babelLoader);
+              const presets = mergePresets(Arr.deepUniq('options.presets', baseBabelLoader, babelLoader));
               const plugins = Arr.deepUniq('options.plugins', baseBabelLoader, babelLoader);
               _.assign(babelLoader.options, { presets, plugins });
               _.defaultsDeep(babelLoader, baseBabelLoader);
