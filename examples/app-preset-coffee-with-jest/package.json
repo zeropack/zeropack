@@ -1,0 +1,71 @@
+{
+  "name": "app-preset-coffee-with-jest",
+  "version": "0.3.1",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "zeropack serve",
+    "serve": "zeropack serve",
+    "build": "zeropack build",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "test-watch": "jest --watch",
+    "clean-jest-cache": "jest --clearCache"
+  },
+  "dependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "jest-css-modules": "^1.1.0",
+    "jest-environment-enzyme": "^7.0.1",
+    "jest-enzyme": "^7.0.1",
+    "zeropack-core": "0.3.1",
+    "zeropack-preset-coffee": "^0.3.2"
+  },
+  "jest": {
+    "verbose": false,
+    "modulePaths": [
+      "<rootDir>/src/"
+    ],
+    "setupFiles": [
+      "<rootDir>/node_modules/regenerator-runtime/runtime"
+    ],
+    "setupTestFrameworkScriptFile": "jest-enzyme",
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    },
+    "transform": {
+      ".+\\.(js|jsx|coffee|cjsx)$": "./test/preprocessor.js",
+      "^.+\\.scss$": "jest-css-modules"
+    },
+    "moduleFileExtensions": [
+      "coffee",
+      "cjsx",
+      "js"
+    ],
+    "testMatch": [
+      "**/*.test.(coffee|cjsx)"
+    ],
+    "moduleNameMapper": {
+      "\\.css$": "<rootDir>/test/styleMock.js",
+      "\\.(png|jpg|gif|ttf|eot|svg)$": "<rootDir>/test/fileMock.js"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.(coffee|cjsx)",
+      "!src/**/*/__tests__/*",
+      "!src/**/*.(story|stories).coffee",
+      "!src/**/*/stories/*"
+    ],
+    "coverageReporters": [
+      "text",
+      "text-summary"
+    ]
+  }
+}
