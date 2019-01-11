@@ -9,6 +9,6 @@
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-typescript",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "main": "index.coffee"
 }

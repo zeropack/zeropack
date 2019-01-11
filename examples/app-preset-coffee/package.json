@@ -1,6 +1,6 @@
 {
   "name": "app-preset-coffee",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -14,7 +14,7 @@
     "react-dom": "^16.3.0"
   },
   "devDependencies": {
-    "zeropack-core": "^0.3.0",
-    "zeropack-preset-coffee": "^0.3.0"
+    "zeropack-core": "0.3.1",
+    "zeropack-preset-coffee": "0.3.1"
   }
 }
