@@ -56,6 +56,7 @@ module.exports = (baseConfig, env) => {
       },
     }
   );
+
   // set development mode for avoiding minification
   mergedWebpackConfig.mode = 'development';
   mergedWebpackConfig.plugins.unshift(new Webpack.DefinePlugin({
@@ -63,6 +64,6 @@ module.exports = (baseConfig, env) => {
     'process.env.BROWSER': true,
     '__DEV__': true,
   }));
-  console.log(mergedWebpackConfig);
+
   return mergedWebpackConfig;
 };

@@ -3,6 +3,7 @@ middlewares = [
   'zeropack-support-coffeescript'
   'zeropack-support-css'
   'zeropack-support-sass'
+  'zeropack-support-stylus'
   'zeropack-support-file'
   'zeropack-plugin-index-html'
   'zeropack-plugin-app-data'
