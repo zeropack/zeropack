@@ -1,8 +1,31 @@
-border-radius(value)
-  -webkit-border-radius: value
-  -moz-border-radius: value
-  border-radius: value
+coef = 4
+
+border(width, rest...)
+  border width rest
+  border-radius 5 * width
+
+cover(delta)
+  content ''
+  position absolute
+  left delta
+  right delta
+  top delta
+  bottom delta
 
 .panel
-  border 1px solid green
-  border-radius 5px
+  display flex
+  justify-content center
+
+  > *
+    padding = coef * 8px
+    border coef * 1px solid red
+    padding padding
+    position relative
+
+    &::before
+      cover -(padding)
+      border coef * 2px solid green
+
+    &::after
+      cover -(2 * padding)
+      border coef * 3px solid blue
