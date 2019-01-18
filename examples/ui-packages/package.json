@@ -1,6 +1,6 @@
 {
   "name": "ui-packages",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "homepage": "https://github.com/zeropack/zeropack/tree/master/examples/ui-components",
   "license": "MIT",
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "zeropack-core": "0.3.x",
-    "zeropack-preset-coffee": "0.3.x",
-    "zeropack-storybook": "0.3.x"
+    "zeropack-preset-coffee": "0.3.4",
+    "zeropack-storybook": "0.3.4"
   }
 }
