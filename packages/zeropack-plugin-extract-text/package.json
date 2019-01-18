@@ -4,7 +4,7 @@
     "zeropack-core": "0.3.1"
   },
   "name": "zeropack-plugin-extract-text",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",

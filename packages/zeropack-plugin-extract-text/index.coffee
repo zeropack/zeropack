@@ -1,6 +1,6 @@
 ExtractTextPlugin = require 'extract-text-webpack-plugin'
 
-EXTRACT_IDS = ['css', 'sass']
+EXTRACT_IDS = ['css', 'sass', 'stylus']
 
 module.exports = ({webpackConfig}) ->
   webpackConfig.module.rules = webpackConfig.module.rules.map (rule) ->
