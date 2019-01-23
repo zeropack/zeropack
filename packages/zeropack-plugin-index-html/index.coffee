@@ -1,5 +1,9 @@
 HtmlWebpackPlugin = require 'html-webpack-plugin'
 
-module.exports = ({webpackConfig}) ->
-  webpackConfig.plugins.unshift new HtmlWebpackPlugin({template: 'index.html'})
+defaultParams =
+  template: 'index.html'
+
+module.exports = ({webpackConfig, builderConfig}) ->
+  params = builderConfig.HtmlWebpackPlugin || defaultParams
+  webpackConfig.plugins.unshift new HtmlWebpackPlugin(params)
 
