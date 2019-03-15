@@ -12,8 +12,11 @@ context =
   webpackConfig: {}
   builderConfig: {}
 
-applyMiddleware = (name) ->
-  rootFirstRequire(name)(context)
+applyMiddleware = (middleware) ->
+  if typeof middleware is 'function'
+    middleware(context)
+  else
+    rootFirstRequire(middleware)(context)
 
 generateContext = ->
   applyMiddleware 'zeropack-config'
@@ -29,7 +32,11 @@ generateContext = ->
 
   middlewares.push 'zeropack-fix-schema'
 
-  middlewares.map applyMiddleware
+  middlewares
+    .filter((middleware) ->
+      !context.builderConfig.ignoreMiddlewares?.includes(middleware)
+    )
+    .map applyMiddleware
 
   context
 
