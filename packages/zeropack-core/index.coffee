@@ -34,7 +34,7 @@ generateContext = ->
 
   middlewares
     .filter((middleware) ->
-      !context.builderConfig.preventPluginList?.includes(middleware)
+      !Boolean(context.builderConfig.ignoreMiddlewares?.includes(middleware))
     )
     .map applyMiddleware
 
