@@ -6,6 +6,7 @@ module.exports = (context) ->
   defaultBuilderConfig =
     context: path.join(process.cwd(), 'src')
     outputPath: path.join(process.cwd(), 'dist')
+    publicPath: '/'
     alias: {}
     name: 'app'
     entry: './index'
