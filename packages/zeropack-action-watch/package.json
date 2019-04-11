@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "zeropack-core": "0.3.6"
+  },
+  "description": "zeropack contrib package",
+  "repository": "https://github.com/zeropack/zeropack",
+  "license": "MIT",
+  "name": "zeropack-action-watch",
+  "version": "0.3.6",
+  "main": "index.coffee"
+}

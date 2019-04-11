@@ -17,6 +17,8 @@ module.exports = (context) ->
         action: 'zeropack-action-serve'
       build:
         action: 'zeropack-action-build'
+      watch:
+        action: 'zeropack-action-watch'
 
   userBuilderConfig = {}
 
@@ -33,6 +35,7 @@ module.exports = (context) ->
     entry: "#{builderConfig.name}": [builderConfig.entry]
     output:
       path: builderConfig.outputPath
+      publicPath: builderConfig.publicPath
     resolve:
       alias: builderConfig.alias
 
