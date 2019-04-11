@@ -1,6 +1,6 @@
 {
   "name": "app-preset-coffee-with-jest",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -25,8 +25,8 @@
     "jest-css-modules": "^1.1.0",
     "jest-environment-enzyme": "^7.0.1",
     "jest-enzyme": "^7.0.1",
-    "zeropack-core": "0.3.6",
-    "zeropack-preset-coffee": "0.3.6"
+    "zeropack-core": "0.3.7",
+    "zeropack-preset-coffee": "0.3.7"
   },
   "jest": {
     "verbose": false,

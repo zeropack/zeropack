@@ -2,13 +2,13 @@
   "dependencies": {
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
-    "zeropack-core": "0.3.6",
-    "zeropack-support-css": "0.3.6"
+    "zeropack-core": "0.3.7",
+    "zeropack-support-css": "0.3.7"
   },
   "description": "zeropack contrib package",
   "repository": "https://github.com/zeropack/zeropack",
   "license": "MIT",
   "name": "zeropack-support-stylus",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "main": "index.coffee"
 }
