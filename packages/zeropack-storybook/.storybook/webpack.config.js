@@ -16,7 +16,7 @@ const mergePresets = (presets) => {
   })
 };
 
-module.exports = (baseConfig, env) => {
+module.exports = ({config: baseConfig, mode: env}) => {
   const { webpackConfig: zeropackConfig } = generateContext();
 
   // base rules|loaders
@@ -56,7 +56,6 @@ module.exports = (baseConfig, env) => {
       },
     }
   );
-
   // set development mode for avoiding minification
   mergedWebpackConfig.mode = 'development';
   mergedWebpackConfig.plugins.unshift(new Webpack.DefinePlugin({
