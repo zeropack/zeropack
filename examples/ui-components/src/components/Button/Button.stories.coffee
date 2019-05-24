@@ -6,7 +6,9 @@ import Button from './Button'
 
 storiesOf('Components|Buttons/HelloButton', module)
   .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+    <Button onClick={action('clicked')}>
+      Hello Button
+    </Button>
   ))
 
 storiesOf('Components|Buttons/EmojiButton', module)
