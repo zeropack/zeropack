@@ -2,7 +2,7 @@
   "dependencies": {
     "zeropack-core": "0.3.7",
     "zeropack-plugin-app-data": "0.3.1",
-    "zeropack-plugin-extract-text": "0.3.7",
+    "zeropack-plugin-extract-text": "0.3.9",
     "zeropack-plugin-git-rev": "0.3.7",
     "zeropack-plugin-happypack": "0.3.7",
     "zeropack-plugin-index-html": "0.3.7",
@@ -15,6 +15,6 @@
     "zeropack-support-stylus": "0.3.7"
   },
   "name": "zeropack-preset-coffee",
-  "version": "0.3.7",
+  "version": "0.3.9",
   "main": "index.coffee"
 }
