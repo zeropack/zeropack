@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "node-sass": "^4.8.2",
+    "node-sass": "^7.0.0",
     "sass-loader": "^6.0.7",
     "zeropack-core": "0.3.7",
     "zeropack-support-css": "0.3.7"
